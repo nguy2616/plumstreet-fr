@@ -1,0 +1,90 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+
+
+// An override for the html selector for theme prefixes
+$html-selector: html
+
+// -------- Colors -----------
+$primary-color: #50CCA1
+$primary-dark-color: #4A5A36
+$second-color: #DE2D44
+$second-dark-color: #282828
+$tertiary-color: #FFFFFF
+$info-color: #3EBDA1
+$success-color: green
+$processing-color: #3EBDA1
+$error-color: red
+$highlight-color: red
+$warning-color: yellow
+$normal-color: #d9d9d9
+$white: #fff
+$black: #050301
+$grey: #C4C4C4
+$grey-1: #CCC8C8
+$shadow-color: rgba(0, 0, 0, 0.2)
+$shadow-1-down: $grey
+$input-bg: $grey
+$input-hover-border-color: $grey
+// Color used by default to control hover and active backgrounds and for
+// alert info backgrounds.
+
+// Base Scaffolding Variables
+// ---
+
+// Background color for `<body>`
+$body-background: #F5F5F5
+$background-primary: #ECECEC
+// Base background color for most components
+$component-background: #F5F5F5
+$font-family: 'Roboto'
+$font-header: 'Gilroy'
+$code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace
+$text-color: fade($primary-color, 80%)
+$text-color-secondary: fade($second-color, 45%)
+$text-color-inverse: $white
+$text-color-grey: #949699
+$icon-color: inherit
+$icon-color-hover: fade($primary-color, 75%)
+$heading-color: fade($primary-color, 85%)
+$heading-color-dark: fade($white, 100%)
+$text-color-dark: fade($primary-color, 85%)
+$text-color-secondary-dark: fade($second-color, 65%)
+$text-selection-bg: $primary-color
+
+//reponsive font-sinze
+// 24px : calc(1vw + 10px) 
+// 36px : calc(2vw + 8px)
+// 18px: calc(1vw + 2px)
+// 40px: calc(2vw + 11px)
+// 49px: calc(3vw +2px)
+
+
+$font-12: 12px
+$font-16: 16px
+$font-18: 18px
+$font-20: 20px
+$font-24: 24px
+$font-36: 36px
+$font-40: 40px
+$font-49: 49px
+$font-50: 50px
+
+$font-base: $font-18
+$font-h6: $font-16
+$font-h5: $font-20
+$font-h4: $font-24
+$font-h3: $font-18
+$font-h2: $font-40
+$font-h1: $font-50
+
+$font-body: $font-base
+$font-content: $font-base +3
+$font-description: $font-base + 2
+$font-caption: $font-base
+
+@mixin lines($line-clamp)
+  display: -webkit-box
+  -webkit-line-clamp: $line-clamp
+  -webkit-box-orient: vertical
+  overflow: hidden
+  // white-space: break-spaces

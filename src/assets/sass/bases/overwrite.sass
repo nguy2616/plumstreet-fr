@@ -1,0 +1,353 @@
+
+#app.v-application
+  background-color: $background-primary
+  font-family: $font-family !important
+  .primary
+    background-color: $primary-color !important
+    color: $primary-color !important
+  .primary--text
+    color: $primary-color !important
+
+  .text
+    &-h1
+      //styleName: Heading/H1
+      font-family: $font-header !important
+      font-size: $font-h1 !important
+      font-style: normal
+      font-weight: 800
+      line-height: 61px
+      letter-spacing: 0em
+
+    &-h2
+      //styleName: Heading/H2
+      font-family: $font-header !important
+      font-size: $font-h2 !important
+      font-style: normal
+      font-weight: 800
+      line-height: $font-49
+      letter-spacing: 0em
+
+
+    &-h3
+      //styleName: Heading/H3
+      font-family: $font-header 
+      font-size: $font-h3 !important
+      font-style: normal
+      font-weight: 800
+      line-height: 20px
+      letter-spacing: 0em
+
+    &-h4
+      //styleName: Heading/H4
+      font-family: $font-header !important
+      font-size: $font-h4 !important
+      font-style: normal
+      font-weight: 800
+      line-height: 29px
+      letter-spacing: 0em
+
+    &-h5
+      //styleName: Heading/H5
+      font-family: $font-header !important
+      font-size: $font-h5 !important
+      font-style: normal
+      font-weight: 800
+      line-height: 16px
+      letter-spacing: 0em
+
+    &-h6
+      //styleName: Heading/H6
+      font-family: $font-header !important
+      font-size: $font-h6 !important
+      font-style: normal
+      font-weight: 800
+      line-height: 16px
+      letter-spacing: 0em
+
+  .v-application--wrap
+      overflow: hidden   
+      height: 100% 
+      
+  .v-container
+    width: 100%
+    max-width: 100%
+
+  .v-text-field .v-label 
+    top: 0
+    font-family: $font-header !important
+    font-style: normal !important
+    font-weight: 600 !important
+    color: black !important
+    font-size: $font-16 !important
+    
+  .v-text-field .v-label--active
+    transform: translateY(-18px) scale(1)
+
+  .dialog-form
+    .v-input
+      font-family: $font-header
+      font-size: $font-16
+      font-weight: 800
+    .v-label
+      font-family: $font-family
+      color: $grey
+      font-size: $font-16
+  
+  .avatar
+    border-radius: 8px
+    width: 140px
+    height: 160px
+    object-fit: cover
+  
+  .img-upload
+    border-radius: 8px
+    width: 100%
+    height: 160px
+    object-fit: cover
+
+  .custom 
+    border: 1px solid #50CCA1
+    box-sizing: border-box
+    border-radius: 8px
+    width: 100%
+    height: 244px
+
+  .custom-res 
+    border: 1px solid #50CCA1
+    box-sizing: border-box
+    border-radius: 8px
+    width: 100%
+    height: 140px
+
+  .cuisinetypes
+        .v-input
+          font-family: $font-header
+          font-size: $font-16
+        .v-label
+          font-family: $font-family
+          color: $black
+          font-size: $font-20
+        .v-input__control
+          height: 20px
+  
+  .v-btn
+      font-family: $font-family
+      text-transform: capitalize
+      word-wrap: break-word
+      white-space: normal
+
+      &.primary
+          background-image: linear-gradient(to right, $primary-color, $primary-color)
+          border-radius: 0
+          color: $white
+          font-size: calc(1vw + 6px)
+          font-weight: bold
+          padding: 10px
+          height:  calc(4vw)
+          width: calc(10vw + 9px)
+      &.user-menu
+          background-color: #434343
+          border: none
+          color: #white
+          font-size: $font-12
+          height: 56px    
+      &.none
+          background-color: transparent !important
+          border: none
+          color: #434343
+          font-size: $font-12
+          height: 48px
+      &.base-btn
+        font-size: $font-12
+        font-family: $font-header
+        font-weight: bold
+        padding: 0.5rem
+        height: auto
+        min-width: 110px
+        letter-spacing: 0
+        &.add
+          background-color: transparent !important
+          border: 1px dashed $primary-color
+          color: $primary-color
+          font-size: $font-24
+          font-weight: bold
+        &.save
+          background-color: $primary-color
+          color: $white
+        &.discard
+          background-color: $white
+          color: $grey
+        &.discard-form
+          border: 1px solid $primary-color
+          background-color: $white
+          color: $grey
+        &.invite
+          border: 1px solid $primary-color
+          background-color: $white
+          color: $primary-color
+        &:not(.xs)
+          font-size: $font-20
+          padding: 0.75rem 1rem
+          max-width: 15.7rem
+      &.event-btn
+        font-size: $font-12
+        font-family: $font-header
+        font-weight: bold
+        padding: 0.5rem
+        height: auto
+        width: 120px
+        letter-spacing: 0
+        &:not(.xs)
+          font-size: $font-16
+          width: 220px
+        &.save
+          background-color: $primary-color
+          color: $white
+        &.discard-form
+          border: 1px solid $primary-color
+          background-color: $white
+          color: $grey
+        
+  .v-btn--is-elevated
+    box-shadow: none
+
+  .fixed-bot
+    position: fixed
+    bottom: 1px
+
+  //.theme--light.v-list
+  //  background: #434343
+  .theme--light.v-expansion-panels .v-expansion-panel-header .v-expansion-panel-header__icon .v-icon
+    color: grey
+
+  //navigation drawer
+  .v-expansion-panels
+    border: none
+
+  //checkbox
+  .v-input--selection-controls
+    margin-top: 0px
+    padding-top: 0px
+
+  .max-width
+    width: 100%
+
+  .fixed-width
+    width: 80%
+  
+  .table-width
+    width: 90%
+
+
+  //reduce space between rows
+  .row + .row
+    margin-top: 0px
+
+  // Overwrite Vuetify input elements
+  .v-input
+    &--checkbox
+      label
+        font-family: $font-header !important
+        font-style: normal !important
+        font-weight: 300 !important
+        color: $black !important
+        font-size: $font-16 !important
+      &:not(.xs)
+        label
+          font-size: $font-16 !important
+  // error message
+  .v-messages
+    min-height: 0px
+  //admin background
+  .admin-bg
+    background-color: #F8FAFD
+
+  //event form
+  .client-popup
+    overflow: hidden
+    height: 100%
+    .title
+      font-family: $font-header !important
+      font-style: normal !important
+      font-weight: 600 !important
+      color: $black !important
+      font-size: $font-16 !important
+    &.xs, &.sm
+      height: 80vh
+    &.lg, &.md, &.xl
+      height: 600px
+    .fixed-top
+        position: absolute
+        top: 0px
+        right: 0px
+        left: 0px
+    .step1
+      overflow: hidden
+      height: 100%
+      &.xs, &.sm
+        margin-top: 80px
+      &.lg, &.md, &.xl
+        margin-top: 50px
+      .event-form
+        width: 100%
+        &:not(.xs)
+          width: 80%
+        .fixed-bot
+          position: absolute
+          bottom: 0px
+          right: 0px
+          left: 0px
+    .step2
+      overflow: hidden
+      height: 100%
+      &.lg, &.md, &.xl
+        margin-top: 50px
+      .event-form
+        width: 100%
+        &:not(.xs)
+          width: 80%
+        .fixed-bot
+          position: absolute
+          bottom: 0px
+          right: 0px
+          left: 0px
+    .step3
+      height: 100%
+      .event-form
+        width: 100%
+        &:not(.xs)
+          width: 80%
+        .fixed-bot
+          position: absolute
+          bottom: 2px
+          right: 0px
+          left: 0px
+  // cuisinetype display "background-color: #E8E6E7; padding: 4px; border-radius: 15px"
+  .cs 
+    background-color: #E8E6E7
+    border-radius: 15px
+    padding: 0px 4px 0px 4px
+    border: 1px solid white
+  // status
+  .status
+    font-family: $font-header
+    font-weight: bold
+    font-size: 16px
+    padding: 4px 8px 4px 8px
+    border-radius: 15px
+    color: white
+    &.new
+      background-color: $primary-color
+    &.old
+        background-color: $grey
+  // data table pointer
+  .v-data-table__wrapper > table > tbody > tr:hover 
+    cursor: pointer
+
+
+.v-main
+    height: 100%
+    background: $white
+    overflow: hidden
+
+

@@ -1,0 +1,136 @@
+//menus list page
+.menus
+  background: url('~@/assets/image/auth/menubg.png')
+  background-size: 100% 100%
+  .menu-item  
+    .options
+      position: absolute
+      top: 0px
+      right: -6px
+    .menu-img
+      width: 100%
+      object-fit: cover
+      height: 240px
+    .menu-img-res
+      width: 100%
+      object-fit: cover
+      height: 140px
+    .menu-des
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-line-clamp: 1
+      -webkit-box-orient: vertical
+  .select-field
+    .v-text-field.v-text-field--solo .v-input__control 
+      min-height: 0px
+      padding: 0
+    .theme--light.v-text-field--solo > .v-input__control > .v-input__slot
+        background-color: rgba(80, 204, 161, 0.2)
+  .sort-field
+    .v-text-field 
+      height: 50%
+      padding-top: 0px
+      margin-top: 0px
+      background-color: rgba(80, 204, 161, 0.2)
+  .company-menus
+    background-color: rgba(80, 204, 161, 0.2)
+  
+.menu-detail-page //menu item detail
+  .menu-detail
+    background: url('~@/assets/image/menu/menudetailbg.png')
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    .menu-header
+      background-color: rgba(39, 245, 151, 0.1)
+      width: 90%
+      height: auto
+      .menu-img
+        width: 100%
+        max-width: 340px
+        max-height: 419px
+        object-fit: cover
+        border-radius: 8px
+      .menu-des
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        font-size: 18px
+        font: $font-family
+    .menu-header-res //responsive
+      background-color: rgba(39, 245, 151, 0.1)
+      width: 90%
+      height: auto
+      .menu-des
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        font-size: 12px
+        font: $font-family
+      .menu-img
+        width: 100%
+        height: auto
+        object-fit: cover
+        border-radius: 8px
+    .group-title
+      position: relative
+      background-image: linear-gradient( transparent, transparent, rgba(39, 245, 151, 0.1))
+      background-size: 90%
+      &:before
+        content: ''
+        position: absolute
+        width: 10rem
+        height: 2rem
+        left: -1.5rem
+        bottom: 0
+        background: $primary-color
+        opacity: 0.1
+    .menu-item  //menu item display
+      .options
+        position: absolute
+        top: 0px
+        right: 0px
+      .item-img
+        width: 100%
+        height: 140px
+        object-fit: cover
+        border-radius: 8px
+      .item-spe
+        width: 6rem
+      .menu-des
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        font-size: 18px
+        font: $font-family
+    .menu-item-res
+      .options
+        position: absolute
+        top: 0px
+        right: 0px
+      .item-spe
+        width: 40px
+      .item-img
+        width: 100%
+        height: 100px
+        object-fit: cover
+        border-radius: 8px
+      .menu-des
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        font-size: 12px
+        font: $font-family
+  .bottom
+    width: 80%
+    background-color: $white
+    box-shadow: 0px -15px 24px rgba(0, 0, 0, 0.03)
+    border-radius: 8px
